@@ -60,6 +60,15 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+
+  @media ${MEDIA_QUERIES.tabletAndDown} {
+    border-top: 4px solid ${COLORS.gray[900]};
+  }
+
+  @media ${MEDIA_QUERIES.phoneAndDown} {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `
 
 const Nav = styled.nav`
@@ -78,6 +87,10 @@ const MobileNav = styled.nav`
   @media ${MEDIA_QUERIES.tabletAndDown} {
     display: flex;
     gap: 32px;
+  }
+
+  @media ${MEDIA_QUERIES.phoneAndDown} {
+    gap: 16px;
   }
 `
 

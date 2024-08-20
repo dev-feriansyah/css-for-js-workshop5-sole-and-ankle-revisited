@@ -9,19 +9,16 @@ import Icon from '../Icon'
 
 const SuperHeader = () => {
   return (
-    <div>
-      <Wrapper>
-        <MarketingMessage>
-          Free shipping on domestic orders over $75!
-        </MarketingMessage>
-        <SearchInput />
-        <HelpLink href="/help">Help</HelpLink>
-        <UnstyledButton>
-          <Icon id="shopping-bag" strokeWidth={1} />
-        </UnstyledButton>
-      </Wrapper>
-      <DecorativeBox />
-    </div>
+    <Wrapper>
+      <MarketingMessage>
+        Free shipping on domestic orders over $75!
+      </MarketingMessage>
+      <SearchInput />
+      <HelpLink href="/help">Help</HelpLink>
+      <UnstyledButton>
+        <Icon id="shopping-bag" strokeWidth={1} />
+      </UnstyledButton>
+    </Wrapper>
   )
 }
 
@@ -37,17 +34,6 @@ const Wrapper = styled.div`
   padding-right: 32px;
   @media ${MEDIA_QUERIES.tabletAndDown} {
     display: none;
-  }
-`
-
-const DecorativeBox = styled.div`
-  display: none;
-
-  @media ${MEDIA_QUERIES.tabletAndDown} {
-    display: block;
-    height: 4px;
-    background-color: ${COLORS.gray[900]};
-    margin-left: auto;
   }
 `
 

@@ -63,6 +63,7 @@ const MainHeader = styled.div`
 
   @media ${MEDIA_QUERIES.tabletAndDown} {
     border-top: 4px solid ${COLORS.gray[900]};
+    align-items: center;
   }
 
   @media ${MEDIA_QUERIES.phoneAndDown} {

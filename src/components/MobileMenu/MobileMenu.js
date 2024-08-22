@@ -42,10 +42,10 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 const Overlay = styled(DialogOverlay)`
   position: fixed;
   inset: 0;
-  background: hsl(220deg 5% 40% / 0.8);
+  background: var(--color-backdrop);
 `
 const Content = styled(DialogContent)`
-  background: ${COLORS.white};
+  background: var(--color-white);
   width: 300px;
   margin-left: auto;
   height: 100%;
@@ -64,7 +64,7 @@ const Nav = styled.nav`
 
 const Link = styled.a`
   text-decoration: none;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
 `
 
@@ -73,7 +73,7 @@ const NavLink = styled(Link)`
   text-transform: uppercase;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
@@ -94,7 +94,7 @@ const Footer = styled.footer`
 
 const FooterLink = styled(Link)`
   font-size: calc(14 / 16 * 1rem);
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
 `
 
 export default MobileMenu
